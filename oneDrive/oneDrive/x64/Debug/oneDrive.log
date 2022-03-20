@@ -1,0 +1,17 @@
+﻿  Folder.cpp
+C:\Facultate\Modern C++\project-onedrive\oneDrive\oneDrive\Folder.cpp(8,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Facultate\Modern C++\project-onedrive\oneDrive\oneDrive\Folder.cpp(116,16): warning C4244: '=': conversion from 'const __time64_t' to 'uint32_t', possible loss of data
+C:\Facultate\Modern C++\project-onedrive\oneDrive\oneDrive\Folder.cpp(117,9): warning C4244: 'return': conversion from 'const __time64_t' to 'uint32_t', possible loss of data
+  ServerConnection.cpp
+C:\Facultate\Modern C++\project-onedrive\oneDrive\oneDrive\ServerConnection.cpp(22,47): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Facultate\Modern C++\project-onedrive\oneDrive\oneDrive\ServerConnection.cpp(26,71): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Facultate\Modern C++\project-onedrive\oneDrive\oneDrive\ServerConnection.cpp(63,17): warning C4244: 'initializing': conversion from 'std::streamoff' to 'long', possible loss of data
+C:\Facultate\Modern C++\project-onedrive\oneDrive\oneDrive\ServerConnection.cpp(78,62): warning C4244: 'argument': conversion from 'std::streamsize' to 'int', possible loss of data
+C:\Facultate\Modern C++\project-onedrive\oneDrive\oneDrive\ServerConnection.cpp(116,59): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Facultate\Modern C++\project-onedrive\oneDrive\oneDrive\ServerConnection.cpp(141,77): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Facultate\Modern C++\project-onedrive\oneDrive\oneDrive\ServerConnection.cpp(170,47): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Facultate\Modern C++\project-onedrive\oneDrive\oneDrive\ServerConnection.cpp(174,71): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Source.cpp
+  User.cpp
+  Generating Code...
+  oneDrive.vcxproj -> C:\Facultate\Modern C++\project-onedrive\oneDrive\x64\Debug\oneDrive.exe

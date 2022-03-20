@@ -1,0 +1,1 @@
+ale ".\\sync" "..\\Server\\sync"

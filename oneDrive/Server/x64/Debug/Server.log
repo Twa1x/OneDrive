@@ -1,0 +1,11 @@
+﻿  ClientConnection.cpp
+C:\Facultate\Modern C++\project-onedrive\oneDrive\Server\ClientConnection.cpp(49,76): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Facultate\Modern C++\project-onedrive\oneDrive\Server\ClientConnection.cpp(73,71): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Facultate\Modern C++\project-onedrive\oneDrive\Server\ClientConnection.cpp(89,47): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Facultate\Modern C++\project-onedrive\oneDrive\Server\ClientConnection.cpp(127,17): warning C4244: 'initializing': conversion from 'std::streamoff' to 'long', possible loss of data
+C:\Facultate\Modern C++\project-onedrive\oneDrive\Server\ClientConnection.cpp(142,62): warning C4244: 'argument': conversion from 'std::streamsize' to 'int', possible loss of data
+  Source.cpp
+  Generating Code...
+C:\Facultate\Modern C++\project-onedrive\oneDrive\Server\Source.cpp(18): warning C4715: 'hashit': not all control paths return a value
+Network.lib(TcpSocket.obj) : warning LNK4099: PDB 'Network.pdb' was not found with 'Network.lib(TcpSocket.obj)' or at 'C:\Facultate\Modern C++\project-onedrive\oneDrive\x64\Debug\Network.pdb'; linking object as if no debug info
+  Server.vcxproj -> C:\Facultate\Modern C++\project-onedrive\oneDrive\x64\Debug\Server.exe

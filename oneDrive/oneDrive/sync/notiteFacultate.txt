@@ -1,0 +1,329 @@
+LAB 2 - > 3D Grafic C++
+
+dx9 : stanga sus 0,
+	  dreapta jos width/height
+	  
+dx11: centru 0,0
+
+
+/////////////
+TEMA 1 AG -> PT ARCE
+
+pointStart si pointEnd apartin pe suprafata a 2 noduri
+
+pointStart.x > coordX si < coordX+diam;
+pointStart.y >  coordY si < coordY+diam
+
+/////////////
+
+TEMA 2 LFC :
+
+o clasa gramatica :
+membri : VN,VT,S,P
+
+VN - sa aibe diferite toate caracterele si sa fie majuscule
+VN  INTERSECTAT VT = MULT. VIDA
+in P trebuie sa exista cel putin o productie care pleaca de la S, fiecare productie trebuie sa aibe in stanga, dreapta VT
+la generare, verific care sunt care aplicabile (productiile) si dupa cu random(generare ca lumea, nu SRAND)  aleg
+daca nu sunt distincte - 0,5
+atentie : lucram modern cpp ( -using namespace std;, +string(folosim iteratori) , vector ( STL ), citirea din fisier a gramaticii )
+
+/////////////
+modern c++ proiect
+csv file format // JSON
+
+primul pas aplicatie care copiaza fisierele din folder dintr-o parte intr-alta si daca se modifica sa se copieze fis dintr o parte intr alta
+///////////////////////////////////////
+modern c++ joculet
+
+jocul quarto - board game - piese: culoarea, inaltimea, forma ,pline/goale
+se joaca pe ture : 1 tura are 2 pasi, 
+win : diagonala/linie/coloana -> proprietate comuna
+
+///////////
+start :  un program care sincronizeaza 2 fisiere pe calculator ->un fis de configurare in care scriem 2 cai pt foldere pe care le sincronizam
+
+
+std::filesystem
+-> luam metadatele si le organizam intr-o baza de date;
+-> copiat datapath-urile intr o baza de date 
+ -> copiat fisierele 
+ 
+ 
+ /////////// MG 3D C++
+ 
+ //// TEMA AUTOMATA FINITA NEDERMINISTA  - LFC
+ tuple pt tranzitie  , stare de pornire + simbol -> stare urmatoare (unordered_map / map -> cum fac cheia???)
+ -> semnalare blocaj
+ 
+ 
+ ////////TEMA 4 - SORTARE TOPOLOGICA AG
+ DATE INTRATE : tema1 ( dam click-ul), tema 2( generam random un graf )
+ trebuie sa verificam sa nu existe cicluri, oricare arc ( x,y) din graf in rezultatul sortarii x trebuie sa fie inaintea lui y.
+ verificare timp : clasa< calendar > functie statica get.date.
+DATE OUTPUT : CONSOLA -> lista de noduri aferenta sortarii topologice.
+
+/////TEMA 5 - COMPONENTE TARI CONEXE
+:input un graf desenat manual.
+rezultat va fi tot grafic .nodurile vor fi marcate cu un camp de culoare, pt fiecare componenta conexa avem o culoare 
+
+
+Program CC pt orientat -> orientat cu 2 drumuri pt fiecare nod; , pt comp tarr conexe facem cu cc;
+Begin
+	U = N - { s }
+	V = {s};
+	W = vid; // componentele conexe
+	NrComp = 1;
+	While W ! = N 
+		Begin
+			While V ! = vid
+				Begin
+					selectez cel mai nou nod x din V 
+					IF exista arc ( x,y ) apartine A , cu y apartine U
+					THEN
+					U=U-{y}, V = V reunit {y};
+					ELSE
+					V=V-{x}; W=W reunit {x};
+				END
+		afisare W;
+		nrComp++;
+		selectez un nou nod S apartine U
+		U = U -{s}, V={s};
+		W= vid;
+	END
+	
+	
+END
+
+
+
+PROGRAM CTC :
+Begin 
+	PTDF(G); // ma intereseaza T2-ul
+	INVERSARE(G);
+	PTDF(G LA -1);
+	SEPAREARE(G la -1):
+END21
+
+
+
+
+////////////////////////
+
+clasa user:
+->string username;
+
+63r5puJNJCDPaqwgD8zY parola app BitBucket
+
+
+//TO DO PT C++ MODERN
+-> IN MAIN VREAU SA CREATI TOATE CELE 16 PIESE POSIBILEE SI SA AFISATI CELE 16 PIESE; (CONSTRUCTOR) LINIA 6 
+-> CLASA PLAYER : PRIMESTE LA CONSTRUCTOR NUMELE PLAYERULUI SI ARE UN OPERATOR DE CITIRE IN CARE SE CITESTE NUMELE  SI OPERATOR AFISARE ;
+
+
+->relatie recursiva : angajat are un sef, un agajat e condus de alt anagajat -> facem o tabela cu sefi si relatia angajat sef 1:1
+
+
+
+Alter table z_address add foreign key (zip ) references z_city (zip );
+Alter table z_person add foreign key (address_id) references z_address (address_id);
+Alter table z_restaurant add foreign key (address_id) references z_address (address_id);
+Alter table z_invoice add foreign key (u_id) references z_restaurant (u_id );
+Alter table z_invoice add foreign key (p_id_emp) references z_person (p_id);
+Alter table z_invoice add foreign key (p_id_cust) references z_person (p_id);
+Alter table z_invoice_articles add foreign key (invoice_no) references z_invoice (invoice_no);
+Alter table z_invoice_articles add foreign key ( article_id ) references z_article ( article_id );
+Alter table z_customer add foreign key (p_id) references z_person(p_id);
+Alter table z_employee add foreign key (p_id) references z_person(p_id);
+
+
+0,0 stanga jos, 1-1 dreapta sus, 
+
+
+
+
+4
+q0
+q1
+q2
+q3
+0 1
+q0
+1
+q3
+q0 0 q1
+q0 1 q0
+q1 0 q2
+q1 1 -
+q2 0 q1
+q2 1 q3
+q3 0 q2
+q3 1 q3
+
+
+lab 7 pt proiect ex5 :tabela comanda;
+
+
+client -> masina adaug atributul marca si genereaza liste
+
+ex 1 . 
+a) Determinati masiniile care au fost aduse in service in luna septembrie anul 2021.
+
+select * from masina  where extract(month from arrive_date) = 09 and extract(year from arrive_date) = 2021;
+
+b) Determinati manoperele care costa mai putin de 1000lei.
+
+select  * from manopera where cost < 1000;
+
+c) Determinati furnizorii al caror nume incep cu litera A si se termina cu b.
+
+select * from furnizor where nume like 'A%b';
+
+
+ex 2 .
+
+a) Selectati clientii care au adus o masina de tip bmw.
+
+select * from client 
+inner join masina 
+on masina.id_client = client.id_client
+where masina.marca = 'BMW';
+
+b) Selectati toate manoperele la care s-au folosit telescoape ca piese;
+
+select * from manopera
+inner join piesa
+on manopera.id_piesa = piesa.id_piesa 
+where piesa.tip = 'telescop';
+
+c) Selectati toti angajati care au prenumele Alexandru.
+select * from anagajat
+inner join persoana
+on angajat.id_persoana = persoana.id_persoana
+where persoana.prenume like 'Alexandru';
+ 
+ 
+ex3 .
+ 
+ex4 .
+ 
+ 
+
+ex 5 .
+
+Exemplu tabelul comanda care pe langa cheile straine id_piesa, id_furnizor au si atributele cost si cantitate.
+
+
+
+///////EX1 
+select * from z_article
+order by name;
+
+///////EX2
+
+select count(*) from z_article
+
+///////EX3
+
+select * from z_invoice
+where date1 between '2011-03-05' and current_date;
+
+
+///////EX4
+
+select z_article.name, z_invoice_articles.price+(z_invoice_articles.price*z_invoice_articles.vat) from z_invoice_articles
+inner join z_article
+on z_invoice_articles.article_id = z_article.article_id;
+
+
+///////EX5
+
+select * from z_person 
+where surname like 'L%';
+
+///////EX6
+
+select to_char(date1,'YYYY') as year,
+count(*) as nr_inregistrari
+from z_invoice 
+group by year;
+
+
+///////EX7
+
+select count(*) from z_person;
+
+
+///////EX8
+
+select * from z_article z_a
+left join z_invoice_articles z_i_a
+on z_i_a.article_id = z_a.article_id
+where z_i_a.article_id is null;
+
+///////EX9
+
+select  z_a.name as name_product, z_a.price as base_price , max(z_i_a.price) as maxim_price from z_article z_a
+inner join z_invoice_articles z_i_a
+on z_a.article_id = z_i_a.article_id
+group by(z_a.name,  z_a.price);\
+\\\\\\\\\\\\\
+
+GRAFICA 3D :
+ includes : 
+ 
+..\..\_external\glm
+..\..\_external\glfw-3.3.4.bin.WIN32\include\GLFW
+..\..\_external\glew-2.1.0\include
+..\..\_external\stb-master
+
+libraries:
+..\..\_external\glew-2.1.0\lib\Release\Win32
+..\..\_external\glfw-3.3.4.bin.WIN32\lib-vc2019
+
+
+
+ path to use : C:\Users\Alex\Desktop
+///////DIJKSTRA ALGO PSEUDOCOD:
+
+
+query 4 tema 8 :
+SELECT "company-name"
+FROM works
+GROUP BY "company-name"
+HAVING AVG(salary)>
+(SELECT AVG(salary)
+FROM works
+GROUP BY "company-name"
+HAVING "company-name" = 'FaraSoft SRL');
+
+
+query 5 tema 8 :
+SELECT  "company-name"
+FROM
+(SELECT c1. "company-name",
+c1.city
+FROM company c1,
+company c2
+WHERE c1.city=c2.city
+AND c2. "company-name" = 'Banca FaraSoft' ) R
+GROUP BY  "company-name"
+HAVING COUNT(DISTINCT city) =
+(SELECT COUNT(DISTINCT city)
+FROM company
+GROUP BY company. "company-name"
+HAVING "company-name" = 'Banca FaraSoft');
+
+
+query 6 tema 8 :
+
+SELECT "employee-name"
+FROM employee
+WHERE"employee-name" NOT IN
+(SELECT w1."employee-name"
+FROM works w1,
+works w2
+WHERE w1.salary < w2.salary
+AND w2."company-name" = 'Banca FaraSoft' );
+
+8,10,8,7,10,7,8,9
